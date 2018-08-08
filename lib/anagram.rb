@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(string)
-    string do |item|
+    string.find_all do |item|
       if item.split("").sort == self.word.split("").sort
         item
       end
